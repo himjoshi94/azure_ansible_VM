@@ -11,7 +11,7 @@ While working on this, I have discovered that lot of python modules were require
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+All the cloud, instance and network level variables are added in defaults/main.yml. The credentials are stored in vars/main.yml. This playbook is compatible when the variables are passed in command line with extra vars
 
 Dependencies
 ------------
