@@ -33,6 +33,10 @@ License
 -------
 BSD
 
+Reference
+-------
+https://galaxy.ansible.com/azure/azure_modules
+
 Author Information
 ------------------
 Himanshu Joshi
