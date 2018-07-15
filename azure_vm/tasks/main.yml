@@ -5,6 +5,9 @@
     - dependencies
     - complete
 - include: network.yml
+  tags:
+    - network
+    - complete
 - include: subnet.yml 
   tags:
     - network
