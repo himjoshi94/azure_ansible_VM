@@ -38,3 +38,18 @@ A password is needed to run this playbook, please contact the owner of this play
 |-- azure_vm.yml
 `-- README.md
 ```
+
+## TAGS
+ - dependencies
+ - network
+ - volume_webapp
+ _ volume_sql
+ - complete
+
+dependencies - installs only dependencies
+network - create a virtual network driver, subnet and security group
+volume_* - creates and attaches respective disk drives.
+complete - used to run the complete functionality of the playbook
+
+##### Example for tags
+ansible-playbook azure_vm.yml -vvv --vault-password-file=./.pass  --tags "network"
