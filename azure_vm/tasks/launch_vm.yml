@@ -4,14 +4,14 @@
     name: "{{ item }}"
     resource_group: himanshu_RG
     os_type: Windows
-    admin_username: jimmy
+    admin_username: "{{ admin_name}}"
     admin_password: "{{ vm_password }}"
     image:
-      offer: WindowsServer
-      publisher: MicrosoftWindowsServer
-      sku: 2016-Datacenter
-      version: latest
-    vm_size: Standard_A0
+      offer: "{{ os_type }}"
+      publisher: "{{ os_publisher }}"
+      sku: "{{ os_sku }}"
+      version: "{{ os_version }}"
+    vm_size: "{{ vm_type }}"
   with_items:
     - webappvm1
     - sqldbvm1
