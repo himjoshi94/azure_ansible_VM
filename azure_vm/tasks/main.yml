@@ -1,0 +1,23 @@
+---
+# tasks file for azure_vm
+- include: dependencies.yml
+  tags:
+    - dependencies
+    - complete
+- include: network.yml
+- include: subnet.yml 
+  tags:
+    - network
+    - complete
+- include: launch_vm.yml
+  tags:
+    - launch
+    - complete
+- include: drive_webapp.yml
+  tags:
+    - volume_webapp
+    - complete
+- include: drive_sql.yml
+  tags:
+    - volume_sql
+    - complete

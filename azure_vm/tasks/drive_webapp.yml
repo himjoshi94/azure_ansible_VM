@@ -1,0 +1,12 @@
+---
+- name: create managed disk for Webappsever
+  azure_rm_managed_disk:
+    name: "{{ item }}"
+    os_type: windows
+    resource_group: himanshu_RG
+    disk_size_gb: 10
+    state: present
+    managed_by: webappvm1
+  with_items:
+    - data
+    - logs

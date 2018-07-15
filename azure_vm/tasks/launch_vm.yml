@@ -1,0 +1,17 @@
+---
+- name: provision virtual machine
+  azure_rm_virtualmachine:
+    name: "{{ item }}"
+    resource_group: himanshu_RG
+    os_type: Windows
+    admin_username: jimmy
+    admin_password: "{{ vm_password }}"
+    image:
+      offer: WindowsServer
+      publisher: MicrosoftWindowsServer
+      sku: 2016-Datacenter
+      version: latest
+    vm_size: Standard_A0
+  with_items:
+    - webappvm1
+    - sqldbvm1

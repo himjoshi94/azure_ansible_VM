@@ -1,0 +1,8 @@
+---
+- name: Create Virtual Network
+  azure_rm_virtualnetwork:
+    name: vnet0
+    resource_group: himanshu_RG
+    address_prefixes_cidr:
+       - "10.1.0.0/16"
+       - "172.1.0.0/16"

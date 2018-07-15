@@ -1,0 +1,8 @@
+---
+- name: Create subnet
+  azure_rm_subnet:
+    name: subnet0
+    virtual_network_name: vnet0
+    resource_group: himanshu_RG
+    address_prefix_cidr: "10.1.0.0/24"
+    state: present

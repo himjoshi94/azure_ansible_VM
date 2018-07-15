@@ -1,0 +1,3 @@
+---
+- name: install python dependencies for azure
+  command: "sudo pip install -r {{role_path}}/files/requirements-azure.txt"
