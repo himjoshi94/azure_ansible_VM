@@ -2,7 +2,7 @@
 - name: provision virtual machine
   azure_rm_virtualmachine:
     name: "{{ item }}"
-    resource_group: himanshu_RG
+    resource_group: "{{ resource_group_name }}"
     os_type: Windows
     admin_username: "{{ admin_name}}"
     admin_password: "{{ vm_password }}"

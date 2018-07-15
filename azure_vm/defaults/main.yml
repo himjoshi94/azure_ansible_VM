@@ -1,5 +1,7 @@
 ---
+#CLOUD LEVEL DETAILS
 admin_name: "jimmy"
+resource_group_name: "himanshu_RG"
 
 # OS LEVEL DETAILS
 os_type: "WindowsServer"
