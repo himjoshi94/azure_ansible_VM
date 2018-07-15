@@ -9,7 +9,7 @@
         direction: Inbound
         priority: 100
         source_address_prefix:
-          - 52.90.91.93
+          - "{{ my_ip }}"
 
       - name: AllowRDP
         destination_port_range: 1433
@@ -17,5 +17,4 @@
         direction: Inbound
         priority: 200
         source_address_prefix:
-          - 52.90.91.93
-
+          - "{{ my_ip }}"

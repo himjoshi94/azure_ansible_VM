@@ -9,6 +9,9 @@ os_publisher: "MicrosoftWindowsServer"
 os_sku: "2016-Datacenter"
 os_version: "latest"
 
+# NETWORK LEVEL DETAILS
+my_ip: "52.90.91.93"
+
 # VM LEVEL DETAILS
 vm_type: "Standard_A0"
 
