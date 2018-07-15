@@ -35,7 +35,9 @@ BSD
 
 Reference
 -------
+The below playbook was used and this installs all the azure cli modules that were required
 https://galaxy.ansible.com/azure/azure_modules
+
 
 Author Information
 ------------------
