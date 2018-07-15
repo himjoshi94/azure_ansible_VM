@@ -1,0 +1,21 @@
+---
+- azure_rm_securitygroup:
+    resource_group: himanshu_RG
+    name: himanshu_SG
+    rules:
+      - name: AllowHTTP
+        destination_port_range: 80
+        access: Allow
+        direction: Inbound
+        priority: 100
+        source_address_prefix:
+          - 52.90.91.93
+
+      - name: AllowRDP
+        destination_port_range: 1433
+        access: Allow
+        direction: Inbound
+        priority: 200
+        source_address_prefix:
+          - 52.90.91.93
+

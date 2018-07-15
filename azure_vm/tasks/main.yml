@@ -8,6 +8,10 @@
   tags:
     - network
     - complete
+- include: network_sg.yml
+  tags:
+    - network
+    - complete
 - include: subnet.yml 
   tags:
     - network
