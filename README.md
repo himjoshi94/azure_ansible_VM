@@ -4,8 +4,7 @@ This ansible playbook creates Virtual Machine in Azure and also attaches managed
 ansible-playbook azure_vm.yml -vvv --vault-password-file=./.pass
 
 ##### NOTE: 
-A password is needed to run this playbook, please create the password as "justdoitnow" as the admin password is hashed out for security reasons.
-please refrain from seeing the admin password
+A password is needed to run this playbook, please contact the owner of this playbook to execute as the password is hashed out.
 
 
 ## Directory Structure:
