@@ -25,6 +25,11 @@ __INSIDE ONE OF THE VM's__
 ![img_20180716_213425](https://user-images.githubusercontent.com/41265279/42769622-4fb89b26-8940-11e8-9041-d618f88c1871.jpg)
 
 
+__MANUALLY CHANGING THE DISK PARTITION__
+![screenshot 16](https://user-images.githubusercontent.com/41265279/42770026-9569358a-8941-11e8-892a-0e5af12d7389.png)
+![screenshot 17](https://user-images.githubusercontent.com/41265279/42770027-967d44fc-8941-11e8-8a46-b686b97741db.png)
+
+
 ##### NOTE: 
 A password is needed to run this playbook, please contact the owner of this playbook to execute as the password is hashed out.
 
