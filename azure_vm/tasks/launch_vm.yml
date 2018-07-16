@@ -4,6 +4,7 @@
     name: "{{ item }}"
     resource_group: "{{ resource_group_name }}"
     os_type: Windows
+    managed_disk_type: "Standard_LRS"    
     admin_username: "{{ admin_name}}"
     admin_password: "{{ vm_password }}"
     image:
