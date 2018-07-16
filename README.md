@@ -1,12 +1,15 @@
 This ansible playbook creates Virtual Machine in Azure and also attaches managed disk.
 
 # How to run the playbook:
-ansible-playbook azure_vm.yml -vvv --vault-password-file=./.pass
+__ansible-playbook azure_vm.yml -vvv --vault-password-file=./.pass__
 
 As part of the assignment I was told to create 100G disk, but with the trial account there was a limitation of creating more disk spaces.
 
 ##### Output
 ![screenshot 6](https://user-images.githubusercontent.com/41265279/42764530-7a4fb4e4-8933-11e8-98d1-a5162e482437.png)
+![image](https://user-images.githubusercontent.com/41265279/42765994-e908e876-8936-11e8-91aa-4b8b45613963.png)
+![image](https://user-images.githubusercontent.com/41265279/42766325-d1b55e38-8937-11e8-9c87-3957089e9b7b.png)
+![image](https://user-images.githubusercontent.com/41265279/42766146-49944cb2-8937-11e8-8d9d-f1ca778de5c0.png)
 
 
 ##### NOTE: 
