@@ -21,6 +21,9 @@ __ANSIBLE RUN__
 ![image](https://user-images.githubusercontent.com/41265279/42766325-d1b55e38-8937-11e8-9c87-3957089e9b7b.png)
 ![image](https://user-images.githubusercontent.com/41265279/42766146-49944cb2-8937-11e8-8d9d-f1ca778de5c0.png)
 
+__INSIDE ONE OF THE VM's__
+![img_20180716_213425](https://user-images.githubusercontent.com/41265279/42769622-4fb89b26-8940-11e8-9041-d618f88c1871.jpg)
+
 
 ##### NOTE: 
 A password is needed to run this playbook, please contact the owner of this playbook to execute as the password is hashed out.
