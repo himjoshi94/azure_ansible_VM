@@ -5,6 +5,10 @@ ansible-playbook azure_vm.yml -vvv --vault-password-file=./.pass
 
 As part of the assignment I was told to create 100G disk, but with the trial account there was a limitation of creating more disk spaces.
 
+##### Output
+![screenshot 6](https://user-images.githubusercontent.com/41265279/42764530-7a4fb4e4-8933-11e8-98d1-a5162e482437.png)
+
+
 ##### NOTE: 
 A password is needed to run this playbook, please contact the owner of this playbook to execute as the password is hashed out.
 
