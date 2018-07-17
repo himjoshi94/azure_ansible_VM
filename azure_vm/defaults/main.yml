@@ -13,5 +13,4 @@ os_version: "latest"
 my_ip: "52.90.91.93"
 
 # VM LEVEL DETAILS
-vm_type: "Standard_A0"
-
+vm_type: "Standard_D2"
