@@ -4,7 +4,7 @@
   win_shell: |
     $diskConfig = New-AzureRmDiskConfig -Location southeastasia -CreateOption Empty -DiskSizeGB 20
     $dataDisk = New-AzureRmDisk -ResourceGroupName himanshu_RG -DiskName MYdatadisk -Disk $diskConfig
-  when: target == "win_azure"
+  when: ansible_os_family == "Windows"
 
 - name: Calling VM
   win_shell: |
