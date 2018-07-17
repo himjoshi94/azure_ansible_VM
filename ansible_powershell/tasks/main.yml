@@ -1,0 +1,22 @@
+---
+# tasks file for ansible_powershell
+- name: Creating disk
+  win_shell: |
+    $diskConfig = New-AzureRmDiskConfig -Location southeastasia -CreateOption Empty -DiskSizeGB 20
+    $dataDisk = New-AzureRmDisk -ResourceGroupName himanshu_RG -DiskName MYdatadisk -Disk $diskConfig
+  when: target == "win_azure"
+
+- name: Calling VM
+  win_shell: |
+    $vm = Get-AzureRmVM -ResourceGroupName himanshu_RG -Name hj
+    $vm = Add-AzureRmVMDataDisk -VM $vm -Name MYdatadisk -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 1
+    Update-AzureRmVM -ResourceGroupName himanshu_RG -VM $vm
+  when: ansible_os_family == "Windows"
+
+- name: RDP connection with VM
+  win_shell: |
+    Get-Disk | Where partitionstyle -eq 'raw' | `
+    Initialize-Disk -PartitionStyle MBR -PassThru | `
+    New-Partition -AssignDriveLetter -UseMaximumSize | `
+    Format-Volume -FileSystem NTFS -NewFileSystemLabel "MYdatadisk" -Confirm:$false
+  when: ansible_os_family == "Windows"
